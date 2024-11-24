@@ -10,7 +10,7 @@ def get_seed(save_path, load_seed):
             setting = json.load(f)
             return setting['seed']
     else:
-        return np.random.randint(0, 2 ** 32)
+        return np.random.randint(0, 2 ** 31)
 
 
 def save_setting(save_path, **params):
